@@ -6,12 +6,10 @@ public class Solution {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
-        
         int items = sc.nextInt();
-
         for(int i=0;i<items;i++){
         int input = sc.nextInt();
-        if(input > 2 && isPrime(input)){
+        if((input == 2 || input == 3 ) || ( input >3 && isPrime(input))){
             System.out.println("Prime");
         }
         else{
